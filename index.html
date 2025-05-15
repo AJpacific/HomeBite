@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>HomeBite - Home Food Delivery</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+    <link href="styles.css" rel="stylesheet" />
+  </head>
+  <body>
+    <main class="bg-white">
+      <div class="max-w-1440">
+        <!-- Header -->
+        <header class="header">
+          <div class="container">
+            <div class="logo">
+              <img src="public/HomeBite.svg" alt="HomeBite logo" height="25" />
+            </div>
+
+            <nav class="nav-menu">
+              <a href="#" class="nav-link">Home</a>
+              <a href="#" class="nav-link">About</a>
+              <a href="#" class="nav-link">Menu</a>
+              <a href="#" class="nav-link">Blog</a>
+              <a href="#" class="nav-link">Contact</a>
+            </nav>
+            <div class="header-actions">
+              <button class="search-btn">
+              <img src="public\Card.svg" alt="Cart Icon" width="21" height="21" style="display: block;" viewBox="0 0 21 21" fill="none" />
+              </button>
+              <div class="cart-btn">
+              <button class="cart-btn">
+              <img src="public\Card-1.svg" alt="Cart Icon" width="21" height="21" style="display: block;" viewBox="0 0 21 21" fill="none" />
+              </button>
+                <span class="cart-badge"></span>
+              </div>
+            </div>
+          </div>
+        </header>
+
+        <!-- Landing Section -->
+        <section class="landing-section">
+          <div class="landing-content">
+            <h1>Authentic Home food in India</h1>
+            <p>HomeBite is a courier service in which authentic home cook food is delivered to a customer.</p>
+            <div class="search-container">
+              <input type="text" placeholder="Search food you love" />
+              <button class="search-btn">Search</button>
+            </div>
+          </div>
+          <div class="landing-image">
+            <img src="public\cuate.svg" alt="Background" class="background-img" />
+          </div>
+        </section>
+
+        <!-- Kitchen Section -->
+        <section class="kitchen-section">
+          <h2>Home Kitchen</h2>
+          <div class="food-grid" id="foodGrid"></div>
+          
+          
+          <div class="popular-items">
+            <h2 class="popular-title">Popular Items</h2>
+            <button class="carousel-btn prev">
+              <img src="public\Arrow-1.svg" alt="Previous" width= "65px" height="65px" />
+            </button>
+            <div class="popular-grid" id="popularGrid"></div>
+            <button class="carousel-btn next">
+              <img src="public\play.svg" alt="Next" width= "65px" height="65px" />
+            </button>
+          </div>
+          
+          <div class="request-dish">
+            <button class="request-btn" id="requestDishBtn">Request a Dish</button>
+            <div class="modal" id="requestDishModal">
+              <div class="modal-content">
+                <h2>Request a Dish</h2>
+                <form id="requestDishForm">
+                  <div class="form-row">
+                    <input type="text" placeholder="Your Name" required />
+                    <input type="email" placeholder="Your Email" required />
+                  </div>
+                  <textarea placeholder="Describe the dish you want to request" required></textarea>
+                  <div class="modal-actions">
+                    <button type="button" class="cancel-btn">Cancel</button>
+                    <button type="submit" class="submit-btn">Submit Request</button>
+                  </div>
+                </form>
+              </div>
+            </div>
+          </div>
+        </section>
+
+
+<!-- Service Section -->
+<section class="service-section">
+  <div class="service-content">
+    <h2>We are providing best</h2>
+    <h2>home cooked food delivery service.</h2>
+    <p>
+      <span>Away from home and craving the tasty homemade recipes?</span>
+      <span>Choose from a selection of our delicious home cooked dishes</span>
+    </p>
+    
+    <div class="video-container">
+      <video id="serviceVideo" class="video-player" poster="public/row.png">
+        <source src="public/3195650-uhd_3840_2160_25fps.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+      </video>
+      <button class="play-btn" id="playBtn" aria-label="Play or pause video">
+        <img src="public/play.svg" alt="Play/Pause Icon" width="98" height="98" style="display: block;" />
+      </button>
+    </div>
+  </div>
+</section>
+
+        <!-- Contact Section -->
+        <section class="contact-section">
+          <div class="contact-content">
+            <div class="contact-form">
+              <h2>Do you have a question</h2>
+              <h2>or want to become a seller?</h2>
+              <p>Fill this form and our manager will contact you next 48 hours.</p>
+              
+              <form id="contactForm">
+                <div class="form-row">
+                  <input type="text" placeholder="Your Name" />
+                  <input type="email" placeholder="Your e-mail" />
+                </div>
+                <textarea placeholder="Your message"></textarea>
+                <button type="submit">Submit</button>
+              </form>
+            </div>
+            <div class="contact-image">
+              <img src="public\Food_delivery_cute_man_riding_motorcycles_cartoon_art_illustration 2.svg" alt="Food delivery illustration" />
+            </div>
+          </div>
+        </section>
+
+        <!-- Footer -->
+        <footer class="footer">
+          <div class="footer-content">
+            <div class="logo">
+              <img src="public/HomeBite.svg" alt="HomeBite logo" height="25" />
+            </div>
+            <nav class="footer-nav">
+              <a href="#" class="nav-link">Home</a>
+              <a href="#" class="nav-link">About</a>
+              <a href="#" class="nav-link">Menu</a>
+              <a href="#" class="nav-link">Blog</a>
+              <a href="#" class="nav-link">Contact</a>
+            </nav>
+            <div class="footer-actions">
+              <button class="social-btn">
+              <img src="public\Facebook.svg" alt="Cart Icon" width="21" height="21" style="display: block;" viewBox="0 0 21 21" fill="none" />
+              </button>
+              <button class="social-btn">
+              <img src="public\iconoir_add-to-cart.svg" alt="Cart Icon" width="21" height="21" style="display: block;" viewBox="0 0 21 21" fill="none" />
+              </button>
+            </div>
+          </div>
+          <div class="footer-divider"></div>
+        </footer>
+      </div>
+    </main>
+    <script src="script.js"></script>
+  </body>
+</html>
